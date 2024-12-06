@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+ 
+}
+
+body{
+  background-color: #fff;
+}
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */

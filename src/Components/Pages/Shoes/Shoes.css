@@ -1,0 +1,44 @@
+/* Shoes.css */
+.shoe-container {
+  display: flex;
+  margin: 0; 
+}
+
+.shoe-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  width: 75%; 
+  margin-left: 20%; 
+  padding: 20px; 
+  overflow-y: auto; 
+  height: 100vh;
+}
+
+.shoe-item {
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  width: 30%; 
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.shoe-item img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.shoe-item h3 {
+  font-size: 24px;
+  margin: 10px 0 5px 0;
+ color: #111;
+}
+
+.shoe-item p {
+  margin: 5px 0; 
+  font-size: 16px;
+  color: #111;
+  text-decoration: none;
+}

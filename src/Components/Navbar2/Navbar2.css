@@ -1,0 +1,79 @@
+/* General styling for the offer bar */
+.offer-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden; /* To hide the text that slides out */
+  }
+  
+  .offer-texts {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for each offer content (h3 + p) */
+  .offer-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0; /* Ensure it starts invisible */
+  }
+  
+  /* Slide-out content */
+  .slide-out {
+    animation: slideOut 10s infinite; /* Increase duration for smooth transition */
+    animation-delay: 0s; /* Starts immediately */
+  }
+  
+  /* Slide-in content */
+  .slide-in {
+    animation: slideIn 10s infinite; /* Increase duration to sync with slide-out */
+  }
+  
+  /* Slide-out animation (moves left) */
+  @keyframes slideOut {
+    0%, 40% { /* On-screen, fully visible */
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50%, 60% { /* Slides out to the left */
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% { /* Off-screen */
+      opacity: 0;
+    }
+  }
+  
+  /* Slide-in animation (moves right) */
+  @keyframes slideIn {
+    0%, 40% { /* Off-screen */
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    50%, 90% { /* Slides in from the right */
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% { /* Stays on screen */
+      opacity: 1;
+    }
+  }
+  
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+h3{
+    font-weight: 400;
+    font-size: 16px;
+}  

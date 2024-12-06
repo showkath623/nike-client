@@ -1,0 +1,155 @@
+.cart-page {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .cart-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .cart-item-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+
+    flex: 1;
+  }
+  
+  .cart-item-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .cart-item-details p {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .cart-item-price {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cart-summary {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cart-summary h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .cart-summary p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .checkout-btn {
+    width: 200px;
+    border-radius: 40px;
+    height: 55px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    font-size: 24px;
+    padding: 50px;
+  }
+  
+  hr {
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .remove-btn {
+    background: none;
+    border: 1px solid #111;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .remove-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .remove-btn:hover {
+    opacity: 0.7; 
+  }
+  
+
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label and input */
+  }
+  
+  .quantity-container input {
+    width: 60px; /* Adjust width as needed */
+    padding: 5px; /* Add some padding */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Font size */
+  }
+  
+  .quantity-container input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  

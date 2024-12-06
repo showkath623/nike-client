@@ -1,0 +1,243 @@
+.men{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.selection{
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.selection h4 {
+    font-size: 26px;
+    margin-left: 60px;
+    font-weight: 400;
+}
+
+.selection ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+}
+
+.selection li {
+    list-style: none;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.selection li a {
+    text-decoration: none;
+    color: #111;
+}
+
+.selection li a:hover {
+    color: #818181;
+}
+
+.men-product{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.heading {
+    font-size: 24px;
+    margin-left: 60px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.foot-card{
+
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+    
+
+}
+
+.foot-card img{
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+   
+}
+
+.foot-card h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: #111;
+    
+}
+
+.foot-card h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.foot-card p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.heading2{
+    font-size: 24px;
+    margin-left: 60px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 90px;}
+
+
+.men-shoemain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    flex-wrap: wrap; 
+}
+
+.menshoe {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menshoe img {
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.menshoe h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #111;
+
+}
+
+.menshoe:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .men-shoemain {
+        justify-content: center; 
+    }
+    
+    .menshoe {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .men-product, .men-shoemain {
+        flex-direction: column;
+    }
+    
+    .foot-card, .menshoe {
+        width: 80%;
+    }
+
+    .menshoe img {
+        width: 150px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .foot-card, .menshoe {
+        width: 100%;
+    }
+
+    .menshoe img {
+        width: 130px;
+        height: 160px;
+    }
+}
+
+
+.men-product, .men-shoemain {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.foot-card, .menshoe {
+    width: 250px;  
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.foot-card img, .menshoe img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.foot-card h2, .menshoe h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.foot-card h3, .foot-card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.foot-card:hover, .menshoe:hover {
+    transform: scale(1.05); 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .foot-card, .menshoe {
+        width: 80%; 
+    }
+}
+
+.women video {
+   
+    object-fit: cover; 
+    width: 1400px;
+    height: 700px;
+    object-fit: fill; 
+    margin-left: 50px;
+  }

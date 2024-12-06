@@ -1,0 +1,49 @@
+.featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px;
+}
+
+.images {
+  position: relative;
+  overflow: hidden;
+  height: 500px; 
+}
+
+.images img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.images h4, .images p {
+  position: absolute;
+  color: white;
+  left: 20px;
+  font-weight: 500;
+}
+
+.images h4 {
+  bottom: 70px; 
+  font-size: 22px;
+}
+
+.images p {
+  bottom: 20px;
+  font-size: 16px;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: black;
+  font-weight:500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+.images p:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+}
